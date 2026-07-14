@@ -134,7 +134,7 @@ export const projects: Project[] = [
       "Search, issue, and return workflows",
     ],
     github: "#",
-    category: "python",
+    category: "Systems",
   },
   {
     slug: "music-management-system",
