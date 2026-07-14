@@ -9,8 +9,8 @@ export const profile = {
   email: "saimakapoor@gmail.com",
   linkedin: "https://www.linkedin.com/in/saima-kapoor-4a976a319/",
   github: "https://github.com/SaimaKapoor",
-  resumeUrl: "C:\Users\SAIMA KAPOOR\Desktop\MY_PROJECTS\saima-portfolio\public\resume_placeholder.pdf", 
-  photoUrl: "C:\Users\SAIMA KAPOOR\Desktop\MY_PROJECTS\saima-portfolio\public\profile.png", 
+  resumeUrl: "public\resume_placeholder.pdf", 
+  photoUrl: "public\profile.png", 
   about: `I'm a third-year Computer Science student who got hooked on AI/ML the
   moment I realized models could be taught to reason about my problems, not just classify cats and dogs. What pulls me in is the gap
   between a clever idea and a system that actually works in the real world:
