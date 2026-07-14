@@ -4,13 +4,13 @@
 
 export const profile = {
   name: "Saima Kapoor",
-  tagline: "CSE Student • Building Intelligent Solutions • Future Founder",
+  tagline: "CSE Student • Building Intelligent Solutions • AI/ML Researcher",
   location: "India",
   email: "saimakapoor@gmail.com",
-  linkedin: "www.linkedin.com/in/saima-kapoor-4a976a319",
+  linkedin: "https://www.linkedin.com/in/saima-kapoor-4a976a319/",
   github: "https://github.com/SaimaKapoor",
-  resumeUrl: "c:\Users\SAIMA KAPOOR\Downloads\SAIMA_RESUME.pdf", 
-  photoUrl: "", // e.g. "/photo.jpg" — leave empty to use the placeholder avatar
+  resumeUrl: "C:\Users\SAIMA KAPOOR\Desktop\MY_PROJECTS\saima-portfolio\public\resume_placeholder.pdf", 
+  photoUrl: "C:\Users\SAIMA KAPOOR\Desktop\MY_PROJECTS\saima-portfolio\public\profile.png", 
   about: `I'm a third-year Computer Science student who got hooked on AI/ML the
   moment I realized models could be taught to reason about my problems, not just classify cats and dogs. What pulls me in is the gap
   between a clever idea and a system that actually works in the real world:
@@ -58,7 +58,7 @@ export type Project = {
   features: string[];
   github?: string;
   demo?: string;
-  category: "AI/ML" | "Web/Backend" | "Research" | "Systems";
+  category: "AI/ML" | "Web/Backend" | "Research" | "Systems | Full Stack" | "AI & Full Stack";
 };
 
 // Add a new project by adding another object to this array.
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/SaimaKapoor/Smart-Storage-Optimizer",
     demo: "#",
-    category: "Systems",
+    category: "Systems | Full Stack",
   },
   {
     slug: "drug-response-prediction",
@@ -123,33 +123,32 @@ export const projects: Project[] = [
     category: "Research",
   },
   {
-    slug: "library-management-system",
-    title: "Library Management System",
+    slug: "fine-tuning-as-a-service",
+    title: "Fine-Tuning as a Service",
     description:
-      "Python-based management system demonstrating clean OOP design and file handling for book, member, and lending records.",
-    tech: ["Python", "OOP", "File Handling"],
+    "An end-to-end platform for fine-tuning open-source Large Language Models using LoRA, featuring a FastAPI backend, model training pipelines, dataset management, and REST APIs for seamless AI model customization.",
+    tech: ["Python", "FastAPI", "Transformers", "PEFT (LoRA)", "PyTorch", "Hugging Face","REST API"],
     features: [
-      "Modular class design for books, members, and transactions",
-      "Persistent storage via structured file handling",
-      "Search, issue, and return workflows",
-    ],
+    "Fine-tuned open-source LLMs using parameter-efficient LoRA adapters",
+    "Built REST APIs for dataset upload, training, inference, and model management",
+    "Integrated Hugging Face Transformers and PEFT for scalable model customization" ],
     github: "#",
-    category: "Systems",
+    category: "AI/ML",
   },
   {
-    slug: "music-management-system",
-    title: "Music Management System",
-    description:
-      "A C-based application that organizes and manages a music library using core data structures.",
-    tech: ["C", "Data Structures"],
-    features: [
-      "Linked-list based library storage",
-      "Sorting and searching by artist, title, and genre",
-      "Memory-conscious implementation in pure C",
-    ],
-    github: "#",
-    category: "Systems",
-  },
+  slug: "parkwise-ai",
+  title: "ParkWise AI",
+  description:
+    "An AI-powered smart parking marketplace that connects drivers with unused private parking spaces while leveraging XGBoost-based occupancy prediction to recommend the best parking spots and reduce urban traffic congestion.",
+  tech: [ "React", "TypeScript", "FastAPI", "PostgreSQL", "XGBoost", "Docker", "Tailwind CSS" ],
+  features: [
+    "Community parking marketplace connecting drivers with private parking owners",
+    "AI-powered parking occupancy prediction and smart parking recommendations using XGBoost",
+    "Real-time parking reservation system with interactive maps, role-based dashboards, and analytics"
+  ],
+  github: "https://github.com/SaimaKapoor/Parkwise-AI",
+  category: "AI & Full Stack",
+},
 ];
 
 export type TimelineItem = {
